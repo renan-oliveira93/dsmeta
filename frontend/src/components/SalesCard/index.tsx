@@ -25,9 +25,10 @@ export default function SalesCard() {
 
     return (
         <div className="dsmeta-card">
-            <h2 className="dsmeta-sales-title">Vendas</h2>
+            <h2 className="dsmeta-sales-title">Selecione um range de vendas</h2>
             <div>
                 <div className="dsmeta-form-control-container">
+                    <p>De</p>
                     <DatePicker
                         selected={minDate}
                         onChange={(date: Date) => setMinDate(date)}
@@ -36,6 +37,7 @@ export default function SalesCard() {
                     />
                 </div>
                 <div className="dsmeta-form-control-container">
+                    <p>Até</p>
                     <DatePicker
                         selected={maxDate}
                         onChange={(date: Date) => setMaxDate(date)}
